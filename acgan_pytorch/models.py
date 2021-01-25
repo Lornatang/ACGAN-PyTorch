@@ -70,7 +70,7 @@ class Discriminator(nn.Module):
         )
         self.aux_layer = nn.Sequential(
             nn.Linear(64 * 512 * self.image_size * self.image_size, num_classes),
-            nn.Softmax()
+            nn.Softmax(dim=0)
         )
 
     def forward(self, input: torch.Tensor) -> [torch.Tensor, torch.Tensor]:
