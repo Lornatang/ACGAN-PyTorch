@@ -58,6 +58,7 @@ coverage.xml
 *.log
 local_settings.py
 db.sqlite3
+db.sqlite3-journal
 
 # Flask stuff:
 instance/
@@ -113,7 +114,6 @@ venv.bak/
 
 # mkdocs documentation
 /site
-
 # mypy
 .mypy_cache/
 .dmypy.json
@@ -122,29 +122,22 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# IDE file
+# custom
 .idea
 .vscode
 
-# Mac file
+# Mac configure file.
 .DS_Store
 
-# custom
-data/MNIST
-data/TFD
-data/cartoon
-data/bedroom*
-data/church_outdoor_train_lmdb
-data/cifar-10-python
-data/cifar-10-python.tar.gz
-data/cifar-10-batches-py
+# Program run create directory.
+data
+results
+samples
 
-output
-test
-*.jpg
-*.jpeg
-*.png
+# Program run create file.
 *.bmp
+*.png
+*.mp4
+*.zip
+*.csv
 *.pth
-
-_cache_datachurchoutdoortrainlmdb
